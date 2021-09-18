@@ -1,23 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import "./App.css";
+import MyFooter from "./components/MyFooter";
+import { PokeContainer } from "./components/PokeContainer";
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="App flex">
+      <h2 className=" animate__animated animate__backInLeft animate__delay-2s">Pokedex</h2>
+      <p className=" animate__animated animate__backInRight animate__delay-3s">
+        Welcome to my pokedex, here you can find some pokemons, their evolutions and types
+      </p>
+      <PokeContainer />
+      <MyFooter />
     </div>
   );
 }

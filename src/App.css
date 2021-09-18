@@ -1,38 +1,153 @@
-.App {
-  text-align: center;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    
+}
+body{
+    background-color: #f08080;
+}
+.App{
+    width: 100%;
+    border: 1px solid black;
+  
+
+}
+.App h2{
+    -webkit-text-stroke: 1px #3953a6;
+    color:#ffcc00 ;
+    font-family: 'Press Start 2P', cursive;
+    font-size: 40px;
+    margin: 20px 0 10px 0;
+
+  
+}
+.App > p{
+    font-family: 'Yanone Kaffeesatz', sans-serif;
+    font-size: 20px;
+    padding: 10px;
+    text-align: center;
+    
+    
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flex{
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.container{
+    width: 90%;
+    margin-top: 20px;
+    
+
+}
+.card{
+    background-color: #fafad2;
+    border-radius: 6px;
+    height: 260px;
+    justify-content: space-evenly;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    width: 200px;
+
+
+}
+.card:hover{
+    background-color: #FFA07A;
+    box-shadow: 2px 2px 5px #ffcc00;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.card h4{
+    color: red;
+    text-align: center;
+}
+.card h3{
+    font-size: 20px;
+    text-transform: capitalize;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.type{
+    display: flex;
+    
+
+}
+.type div:last-child{
+    margin-left: 5px;
+}
+.type div{
+    border-radius: 20px;
+    font-size: 16px;
+    padding: 5px;
+    text-transform: uppercase;
+
+}
+.fire{
+    background-color: #ff0000b0;
+}
+.poison{
+    background-color: #dd76dd;
+}
+.grass{
+    background-color: #82e982;
+}
+.flying{
+    background-color: #bdb9b9;
+}
+.water{
+    background-color: #70e5fa;
+}
+.bug{
+    background-color: #f3d962;
+}
+.footer{
+    align-items: center;
+    background-color: #c8f5f5;
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    justify-content: center;
+    padding: 10px;
+    width: 100%;
+}
+.social-media{
+    display: flex;
+    justify-content: space-around;
+    width: 40%;
+
+}
+.social-media svg{
+    height: 22px;
+    width: 22px;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+@media (min-width: 640px) {
+    .container{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-around; 
+        width: 70%;
+    
+    }
+    
+    .App h2{
+    font-size: 60px;
+
+    }
+
+    .App > p{
+        font-size: 25px;
+        
+    }
+    .social-media{
+        width: 15%;
+    
+    }
+
+    }
